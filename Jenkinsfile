@@ -4,7 +4,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-               bat 'mvn compile'
+               //sh 'mvn compile'
+                mvnw.cmd compile
             }
         }
         stage('Test') {
